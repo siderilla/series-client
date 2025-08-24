@@ -1,1 +1,5 @@
-<p>series-card works!</p>
+<div class="card">
+	<span class="title">Title: {{ serie.title }}</span>
+	<span class="seasons">Seasons: {{ serie.seasons }}</span>
+	<button class="delete" (click)="onDelete(serie.id)">DELETE</button>
+</div>

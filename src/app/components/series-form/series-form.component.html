@@ -1,1 +1,10 @@
-<p>series-form works!</p>
+<form [formGroup]="seriesForm" (ngSubmit)="submitSeries()">
+	New Series:
+	<label for="title">Title</label>
+	<input id="title" type="text" formControlName="title">
+
+	<label for="seasons">Seasons</label>
+	<input id="seasons" type="number" formControlName="seasons">
+
+	<button type="submit">Add</button>
+</form>
